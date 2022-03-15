@@ -125,7 +125,7 @@ D:\Code\github>git branch
 ``` terminal
 D:\Code\github>git checkout main
 Switched to branch 'main'
-warning: cancelling a revert in progress
-M       Github.md
+
+
 
 ```
