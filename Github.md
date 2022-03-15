@@ -136,8 +136,18 @@ D:\Code\github>git branch
 > 다른 브랜치의 변경사항 가져오기
 
 ``` terminal
-D:\Code\github>git merge master
-Already up to date.
+D:\Code\github>git checkout master
+Switched to branch 'master'
+
+D:\Code\github>git branch
+  main
+* master
+
+D:\Code\github>git merge main
+Updating d6f3721..65d36e7
+Fast-forward
+ Github.md | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
 ```
 
 &nbsp;
