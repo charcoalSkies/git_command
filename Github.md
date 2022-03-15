@@ -40,7 +40,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 ``` terminal
 특정 파일만 stage
 
-D:\Code\github>git add Github.md   
+D:\Code\github>git add testfile.txt  
 
 폴더 내 모든 파일 stage 
 
@@ -52,9 +52,80 @@ D:\Code\github>git add -A
 > 현상태 저장
 
 ``` terminal
-D:\Code\github>git commit -m "적어둘 내용"
-[master (root-commit) cd1a539] Make Github.md
- 1 file changed, 44 insertions(+)
- create mode 100644 Github.md
+D:\Code\github>git commit -m "적어둘 내용" 
+[master d46daa3] make testfile.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 testfile.txt
+
+D:\Code\github>git status
+On branch master
+nothing to commit, working tree clean
+
+```
+
+&nbsp;
+
+> git 상태들 확인(일련번호 등)
+
+``` terminal
+D:\Code\github>git log
+commit 1f9955750814a848e27f77de4879a7376a39eb08 (HEAD -> master)
+Author: Backtrack404 <jun48470@gmail.com>
+Date:   Tue Mar 15 22:12:35 2022 +0900
+
+    add line2
+
+commit d46daa32bba2d39a575f927c65a2cef61e0b80f3
+Author: Backtrack404 <jun48470@gmail.com>
+Date:   Tue Mar 15 22:10:16 2022 +0900
+
+    make testfile.txt
+```
+
+&nbsp;
+
+> 특정 시점으로 돌아가기 (복구 불가능)
+
+``` terminal
+D:\Code\github>git reset d46daa32bba2d39 --hard
+HEAD is now at d46daa3 make testfile.txt
+
+D:\Code\github>git log
+commit d46daa32bba2d39a575f927c65a2cef61e0b80f3 (HEAD -> master)
+Author: Backtrack404 <jun48470@gmail.com>
+Date:   Tue Mar 15 22:10:16 2022 +0900
+
+    make testfile.txt
+
+```
+
+&nbsp;
+
+> 브랜치 만들기
+
+``` terminal
+D:\Code\github>git branch main
+
+```
+
+&nbsp;
+
+> 생성된 브랜치 확인
+
+``` terminal
+D:\Code\github>git branch
+  main
+* master
+```
+
+&nbsp;
+
+> 특정 브랜치로 이동
+
+``` terminal
+D:\Code\github>git checkout main
+Switched to branch 'main'
+warning: cancelling a revert in progress
+M       Github.md
 
 ```
