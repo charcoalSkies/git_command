@@ -152,8 +152,18 @@ Fast-forward
 
 &nbsp;
 
-> 다른 브랜치의 변경사항 가져오기 (이력 깔끔히)
+> 브랜치 삭제
 
 ``` terminal
+D:\Code\github>git branch
+  main
+* master
+  sub
 
+D:\Code\github>git branch -d sub
+Deleted branch sub (was d6f3721).
+
+D:\Code\github>git branch
+* main
+  master  
 ```
