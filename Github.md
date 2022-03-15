@@ -33,12 +33,28 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
+&nbsp;
+
 > 폴더 내 변화 캡슐에 담기(stage)
 
 ``` terminal
-D:\Code\github>git add Github.md
+특정 파일만 stage
 
-또는 
+D:\Code\github>git add Github.md   
 
+폴더 내 모든 파일 stage 
+
+D:\Code\github>git add -A
+```
+
+&nbsp;
+
+> 현상태 저장
+
+``` terminal
+D:\Code\github>git commit -m "적어둘 내용"
+[master (root-commit) cd1a539] Make Github.md
+ 1 file changed, 44 insertions(+)
+ create mode 100644 Github.md
 
 ```
