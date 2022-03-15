@@ -142,4 +142,8 @@ Already up to date.
 
 &nbsp;
 
-> 
+> 다른 브랜치의 변경사항 가져오기 (이력 깔끔히)
+
+``` terminal
+
+```
