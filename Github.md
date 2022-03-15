@@ -126,6 +126,20 @@ D:\Code\github>git branch
 D:\Code\github>git checkout main
 Switched to branch 'main'
 
-
-
+D:\Code\github>git branch
+* main
+  master
 ```
+
+&nbsp;
+
+> 다른 브랜치의 변경사항 가져오기
+
+``` terminal
+D:\Code\github>git merge master
+Already up to date.
+```
+
+&nbsp;
+
+> 
